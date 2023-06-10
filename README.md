@@ -28,7 +28,7 @@ sudo apt-get install git-all
 2. Use o comando abaixo:
 
 ```bash
-git clone https://github.com/Wilsonjsjunior/Curso-ONCOGEN-2022.git
+git clone https://github.com/Wilsonjsjunior/Curso-X-Meeting-2023.git
 ```
 
 ## Como instalar conda
@@ -54,11 +54,11 @@ docker build -t oncogene -f dockerfile .
 Vá para o diretório do repositório do curso, e depois crie um container com a imagem baixada, utilizando o seguinte comando:
 
 ```bash
-docker run -v ~/Curso-ONCOGEN-2022/curso:/curso -it oncogene
+docker run -v ~/Curso-X-Meeting-2023:/curso -it oncogene
 ```
 
 No final, será criado um container com todos os softwares necessários para a execução prática do curso já instalados.
 
-### Mais informações:
+### Mais informações
 
 `wjosedasilva@mgi-tech.com`
