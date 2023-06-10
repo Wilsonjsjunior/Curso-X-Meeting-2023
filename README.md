@@ -48,13 +48,13 @@ As instalações de outros sistemas operacionais podem ser encontradas [aqui](ht
 Após a instalação, faça a build da imagem no seu computador:
 
 ```bash
-docker build -t oncogene -f dockerfile .
+docker build -t bioinfo:0.1.0 -f dockerfile .
 ```
 
 Vá para o diretório do repositório do curso, e depois crie um container com a imagem baixada, utilizando o seguinte comando:
 
 ```bash
-docker run -v ~/Curso-X-Meeting-2023:/curso -it oncogene
+docker run -v ~/Curso-X-Meeting-2023:/curso -it bioinfo:0.1.0
 ```
 
 No final, será criado um container com todos os softwares necessários para a execução prática do curso já instalados.
