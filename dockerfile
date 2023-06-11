@@ -27,4 +27,4 @@ RUN wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip &&
     unzip snpEff_latest_core.zip
 
 ## Montar o volume com os dados
-COPY /* /Curso-ONCOGEN-2022
+COPY /* /Curso-X-Meeting-2023

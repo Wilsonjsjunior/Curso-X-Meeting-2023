@@ -39,13 +39,14 @@ git clone https://github.com/Wilsonjsjunior/Curso-X-Meeting-2023.git
 
 ```bash
 conda create -n bioinfo:0.1.0 -c bioconda -c conda-forge gatk4 \
-  freebayes \
-  picard \
-  bwa \
-  fastqc \
-  samtools \
-  bedtools
+freebayes \
+picard \
+bwa \
+fastqc \
+samtools \
+bedtools
 ```
+
 ## Como rodar o container Docker
 
 Faça a instalação do Docker de acordo com o seu sistema operacional:
