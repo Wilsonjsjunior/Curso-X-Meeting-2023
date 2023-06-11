@@ -35,6 +35,17 @@ git clone https://github.com/Wilsonjsjunior/Curso-X-Meeting-2023.git
 
 * [Link ensinando como instalar](https://conda.io/docs/user-guide/install/index.html)
 
+| você também pode criar um ambiente conda na sua máquinas com todas as ferramentas necessárias:
+
+```bash
+conda create -n bioinfo:0.1.0 -c bioconda -c conda-forge gatk4 \
+  freebayes \
+  picard \
+  bwa \
+  fastqc \
+  samtools \
+  bedtools
+```
 ## Como rodar o container Docker
 
 Faça a instalação do Docker de acordo com o seu sistema operacional:
@@ -59,6 +70,6 @@ docker run -v ~/Curso-X-Meeting-2023:/curso -it bioinfo:0.1.0
 
 No final, será criado um container com todos os softwares necessários para a execução prática do curso já instalados.
 
-### Mais informações
+### Mais informações e mais [conteúdo](https://github.com/geocarvalho/snnbcourse2018)
 
 `wjosedasilva@mgi-tech.com`
