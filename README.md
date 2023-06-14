@@ -75,5 +75,5 @@ No final, será criado um container com todos os softwares necessários para a e
 
 `wjosedasilva@mgi-tech.com`
 
-![MGI](images/Picture2.png)
-![MGI-Tech](images/Picture1.png)
+![MGI](images/qrcode-logo-MGI.png)
+<!-- ![MGI-Tech](images/frame.png) -->
