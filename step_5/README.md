@@ -21,7 +21,7 @@ snpEff download -v hg38
 ## Rodar o SnpEff
 
 ```bash
-snpEff -spliceSiteSize 10 -v hg38 ../04_chamada-de-variante/510-7-BRCA_S8.vcf > 510-7-BRCA_S8.anno.vcf
+snpEff -v hg38 E100024251.brca.gatk.vcf > E100024251.brca.gatk.ann.vcf
 ```
 
 > O parâmetro `-spliceSiteSize 10` identifica as regiões +10 e -10 como sendo regiões de splicing.

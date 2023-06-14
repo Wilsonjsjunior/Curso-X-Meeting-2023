@@ -74,3 +74,6 @@ No final, será criado um container com todos os softwares necessários para a e
 ### Mais informações e mais [conteúdo](https://github.com/geocarvalho/snnbcourse2018)
 
 `wjosedasilva@mgi-tech.com`
+
+![MGI](images/Picture2.png)
+![MGI-Tech](images/Picture1.png)
