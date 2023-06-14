@@ -1,30 +1,27 @@
 # Anotação das variantes chamadas pelo Freebayes utilizando [SnpEff](http://snpeff.sourceforge.net/SnpEff_manual.html#cmdline)
 
-## Fazer a instalação do SnpEff, além dele também é necessário ter o java jdk instalado.
+## Fazer a instalação do SnpEff
 
 ```bash
 conda install -c bioconda snpeff
-conda install -c cyclus java-jdk
 ```
 
-## Fazer download das anotações referentes ao genoma GRCh37
+## Procurando a referência no banco de dados
 
 ```bash
-java -jar snpEff/snpEff.jar download GRCh37.75
+snpEff databases | grep hg38
 ```
 
-> Para saber mais sobre os bancos disponíveis:
+## Fazer download das anotações referentes ao genoma hg38
 
 ```bash
-java -jar snpEff/snpEff.jar databases | grep GRCh37
+snpEff download -v hg38
 ```
-
-> Ignorar o código a partir do pipe se quiser ver tudo disponível
 
 ## Rodar o SnpEff
 
 ```bash
-java -jar snpEff/snpEff.jar -Xmx4G -spliceSiteSize 10 -v GRCh37.75 ../04_chamada-de-variante/510-7-BRCA_S8.vcf > 510-7-BRCA_S8.anno.vcf
+snpEff -spliceSiteSize 10 -v hg38 ../04_chamada-de-variante/510-7-BRCA_S8.vcf > 510-7-BRCA_S8.anno.vcf
 ```
 
 > O parâmetro `-spliceSiteSize 10` identifica as regiões +10 e -10 como sendo regiões de splicing.
