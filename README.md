@@ -10,6 +10,8 @@ Repositório criado para detalhar os passos do curso prático de bioinformática
 
 O Sequenciamento de Nova Geração (NGS) tem possibilitado uma produção sem precedentes de dados genéticos. A análise subsequente desses dados, em busca de variantes genéticas que possam estar associadas a determinado fenótipo, é um importante passo para novas alternativas de diagnóstico e tratamento personalizado de pacientes. Este minicurso visa introduzir como é feito o tratamento dos dados de NGS advindos de DNA humano por meio de ferramentas de bioinformática, passando pelas etapas de análise de qualidade, alinhamento, chamada e anotação de variantes.
 
+![GACK](images/best-GATK.webp)
+
 ## Sobre a MGI
 
 A [MGI](https://en.mgi-tech.com/) cria ferramentas e tecnologias essenciais para permitir a inovação em ciências da vida. Produtora líder de sequenciadores de alto rendimento clínico, a MGI se dedica a P&D, produção e vendas de instrumentos de sequenciamento, reagentes, processamento e produtos relacionados.
@@ -76,4 +78,3 @@ No final, será criado um container com todos os softwares necessários para a e
 `wjosedasilva@mgi-tech.com`
 
 ![MGI](images/qrcode-logo-MGI.png)
-<!-- ![MGI-Tech](images/frame.png) -->
