@@ -13,13 +13,13 @@ Entre na pasta `step_2` crie os diretórios e rode o comando abaixo
 
 ```bash
 mkdir FASTQC cutadapt
-fastqc ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz --nogroup -o ./
-fastqc ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz --nogroup -o ./
+fastqc E100024251_L01_104.bwa.sortdup.bqsr.brca.1.fastq.gz --nogroup -o ./
+fastqc E100024251_L01_104.bwa.sortdup.bqsr.brca.2.fastq.gz --nogroup -o ./
 ```
 
 > Dúvidas sobre os argumentos usados, use o comando abaixo:
 
-```
+```bash
 fastqc --help
 ```
 
@@ -30,13 +30,13 @@ conda install -c bioconda cutadapt
 apt-get install cutadapt
 
 cd ../cutadapt/
-cutadapt -q 20 -o 510-7-BRCA_S8_L001_R1_001.trimmed.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz
-cutadapt -q 20 -o 510-7-BRCA_S8_L001_R2_001.trimmed.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz
+cutadapt -q 20 -o E100024251_L01_104.bwa.sortdup.bqsr.brca.1.trimmed.fastq.gz E100024251_L01_104.bwa.sortdup.bqsr.brca.1.fastq.gz
+cutadapt -q 20 -o E100024251_L01_104.bwa.sortdup.bqsr.brca.2.trimmed.fastq.gz E100024251_L01_104.bwa.sortdup.bqsr.brca.2.fastq.gz
 ```
 
 ## Analisando o número de sequências no Fastq
 
 ```bash
-gunzip -c ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz | echo "$((`wc -l` / 4))"
-gunzip -c ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz | echo "$((`wc -l` / 4))"
+gunzip -c E100024251_L01_104.bwa.sortdup.bqsr.brca.1.fastq.gz | echo "$((`wc -l` / 4))"
+gunzip -c E100024251_L01_104.bwa.sortdup.bqsr.brca.2.fastq.gz | echo "$((`wc -l` / 4))"
 ```
